@@ -17,7 +17,7 @@ with st.form("my_form"):
     if not openai_api_key:
         st.info("Please add your OpenAI API key to continue.") 
 
-    ytlink  = st.text_input("Video link format must be like  - https://www.youtube.com/watch?v=xxxxxxxxxx")
+    ytlink  = st.text_input("Video link format must be like  - https://www.youtube.com/watch?v=xxxxxxxxxx and have Transcription")
     submitted = st.form_submit_button("Submit")
 
     if submitted and openai_api_key and ytlink:
